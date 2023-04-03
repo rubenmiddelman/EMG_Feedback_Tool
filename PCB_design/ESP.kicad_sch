@@ -1,0 +1,21 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 64a73757-7c4b-4432-9693-b3f82855b745)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (rectangle (start 21.59 24.13) (end 129.54 81.28)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid c0d4443c-e1c3-4bcb-98f3-c6aba0e94cc3)
+  )
+
+  (text "BLuetooth and Programmer\n" (at 21.59 22.86 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6949b11e-8483-4124-b177-068e12b5aa90)
+  )
+)
