@@ -64,7 +64,7 @@
     (uuid e72cb29c-bb68-451d-8330-8cf2d54a845e)
   )
 
-  (text_box "TO DO:\n*amplify signal to 1,65V from 45uV\n*offset signal bij 1,65V\n*Add charging capabilities\n*add screwholes"
+  (text_box "TO DO:\n*add filters\n*add charging capabilities\n*add screwholes"
     (at 228.6 63.5 0) (size 46.99 76.2)
     (stroke (width 0) (type default))
     (fill (type none))
