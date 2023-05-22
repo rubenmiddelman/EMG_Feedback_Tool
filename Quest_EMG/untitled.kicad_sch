@@ -522,9 +522,6 @@
     )
   )
 
-  (junction (at 46.99 54.61) (diameter 0) (color 0 0 0 0)
-    (uuid 090c886a-6c48-401e-b63d-fed5c9647046)
-  )
   (junction (at 78.74 135.89) (diameter 0) (color 0 0 0 0)
     (uuid 096be8e2-76d1-4615-acb0-d92ee9e70a00)
   )
@@ -549,6 +546,9 @@
   (junction (at 204.47 45.72) (diameter 0) (color 0 0 0 0)
     (uuid 3c912837-cc38-4f07-bc59-5aa8f8facdaf)
   )
+  (junction (at 46.99 54.61) (diameter 0) (color 0 0 0 0)
+    (uuid 47ace321-9207-4f3d-b88c-86757184a21b)
+  )
   (junction (at 208.28 38.1) (diameter 0) (color 0 0 0 0)
     (uuid 4f806d15-472e-4cce-8ff0-92968b74c438)
   )
@@ -560,6 +560,9 @@
   )
   (junction (at 78.74 27.94) (diameter 0) (color 0 0 0 0)
     (uuid 5d8571be-1358-4cb8-ae28-3bc2f35e2e4d)
+  )
+  (junction (at 46.99 121.92) (diameter 0) (color 0 0 0 0)
+    (uuid 66376d45-d784-4049-83d1-7fdcc7f7341c)
   )
   (junction (at 80.01 181.61) (diameter 0) (color 0 0 0 0)
     (uuid 6f5ae34d-9257-4eae-8b9e-84a495239120)
@@ -584,9 +587,6 @@
   )
   (junction (at 204.47 62.23) (diameter 0) (color 0 0 0 0)
     (uuid 7ecfa652-5bc3-432b-95d0-99bbad21ff90)
-  )
-  (junction (at 46.99 121.92) (diameter 0) (color 0 0 0 0)
-    (uuid 8076eaf6-5a49-4745-ba78-a21d901534ff)
   )
   (junction (at 78.74 68.58) (diameter 0) (color 0 0 0 0)
     (uuid 8468936e-e2f4-4272-8673-ff73c0802fb7)
@@ -737,6 +737,10 @@
   (wire (pts (xy 73.66 95.25) (xy 78.74 95.25))
     (stroke (width 0) (type default))
     (uuid 2d54b9ec-8a63-4fd7-ad36-7fcd7d6dc1a1)
+  )
+  (wire (pts (xy 46.99 54.61) (xy 46.99 62.23))
+    (stroke (width 0) (type default))
+    (uuid 2d5b7595-adb3-4626-ba44-637aa03733c2)
   )
   (wire (pts (xy 204.47 38.1) (xy 204.47 43.18))
     (stroke (width 0) (type default))
@@ -946,9 +950,13 @@
     (stroke (width 0) (type default))
     (uuid 8c1ade12-7a36-4226-ac97-188e6173bf91)
   )
-  (wire (pts (xy 46.99 121.92) (xy 46.99 120.65))
+  (wire (pts (xy 46.99 113.03) (xy 46.99 121.92))
     (stroke (width 0) (type default))
     (uuid 8e120827-5a6f-4074-9421-dadb098ab0c4)
+  )
+  (wire (pts (xy 46.99 121.92) (xy 46.99 129.54))
+    (stroke (width 0) (type default))
+    (uuid 8fad5824-a6aa-491b-b83c-47e515e3b5b4)
   )
   (wire (pts (xy 204.47 129.54) (xy 213.36 129.54))
     (stroke (width 0) (type default))
@@ -1142,7 +1150,7 @@
     (stroke (width 0) (type default))
     (uuid ea01b894-2077-417f-a16b-bbd1c921ccce)
   )
-  (wire (pts (xy 46.99 54.61) (xy 46.99 53.34))
+  (wire (pts (xy 46.99 45.72) (xy 46.99 54.61))
     (stroke (width 0) (type default))
     (uuid ed49d12a-c55c-4c95-948c-0cb53449959f)
   )
@@ -1600,7 +1608,7 @@
     (property "Reference" "R1" (at 48.768 40.7416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "390" (at 48.768 43.053 0)
+    (property "Value" "100" (at 48.768 43.053 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 45.212 41.91 90)
@@ -1719,48 +1727,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 46.99 125.73 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 17392e4d-0f65-4aa8-ba1f-28b2c9910e91)
-    (property "Reference" "R3" (at 48.768 124.5616 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "390" (at 48.768 126.873 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 45.212 125.73 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 46.99 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6cc924f8-2987-4ec7-ae63-545361c33b3e))
-    (pin "2" (uuid e46d1f6b-0443-4f8c-8f13-610a208f43ec))
-    (instances
-      (project "Quest_EMG_V2"
-        (path "/0a1c0da6-b5f4-4811-bab6-325eaaab9ba6"
-          (reference "R3") (unit 1)
-        )
-        (path "/0a1c0da6-b5f4-4811-bab6-325eaaab9ba6/838164a3-69ca-4a23-b38f-f69071e638d3"
-          (reference "R18") (unit 1)
-        )
-      )
-      (project "Quest_EMG"
-        (path "/67748ae8-7ff0-411f-94ce-ac7b136b3c1f"
-          (reference "R3") (unit 1)
-        )
-        (path "/67748ae8-7ff0-411f-94ce-ac7b136b3c1f/8e7c5476-16bd-404a-9f48-60ae4ce6d75c"
-          (reference "R7") (unit 1)
-        )
-      )
-      (project "HARDIMPL"
-        (path "/acefa769-b849-43b8-9ddb-a217494d9f73"
-          (reference "R3") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 220.98 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1b0aac23-eebc-49f1-bf80-e5a1eefd54bb)
@@ -1841,7 +1807,7 @@
     (property "Reference" "R4" (at 48.768 132.1816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "15" (at 48.768 134.493 0)
+    (property "Value" "100" (at 48.768 134.493 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 45.212 133.35 90)
@@ -2117,48 +2083,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 46.99 58.42 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 27a89c46-5c21-46a3-93c9-af08c816a3d6)
-    (property "Reference" "R3" (at 48.768 57.2516 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "390" (at 48.768 59.563 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 45.212 58.42 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 46.99 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b1656d9d-901f-472f-91bd-76cb16353b2c))
-    (pin "2" (uuid 492eeb68-312d-4b02-a464-e73e1ec9d34a))
-    (instances
-      (project "Quest_EMG_V2"
-        (path "/0a1c0da6-b5f4-4811-bab6-325eaaab9ba6"
-          (reference "R3") (unit 1)
-        )
-        (path "/0a1c0da6-b5f4-4811-bab6-325eaaab9ba6/838164a3-69ca-4a23-b38f-f69071e638d3"
-          (reference "R3") (unit 1)
-        )
-      )
-      (project "Quest_EMG"
-        (path "/67748ae8-7ff0-411f-94ce-ac7b136b3c1f"
-          (reference "R3") (unit 1)
-        )
-        (path "/67748ae8-7ff0-411f-94ce-ac7b136b3c1f/8e7c5476-16bd-404a-9f48-60ae4ce6d75c"
-          (reference "R3") (unit 1)
-        )
-      )
-      (project "HARDIMPL"
-        (path "/acefa769-b849-43b8-9ddb-a217494d9f73"
-          (reference "R3") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 220.98 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b8fa398-b32b-4924-a69d-278bbc0bf1b9)
@@ -2315,48 +2239,6 @@
       (project "HARDIMPL"
         (path "/acefa769-b849-43b8-9ddb-a217494d9f73"
           (reference "R13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 46.99 49.53 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 43be0d5a-1a92-4756-abc6-dc298dafbafa)
-    (property "Reference" "R2" (at 48.768 48.3616 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "15" (at 48.768 50.673 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 45.212 49.53 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 46.99 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9b8dde3a-43c7-4832-b1d0-a17d19c00412))
-    (pin "2" (uuid a60ce8d2-aa18-4c19-bc8c-766e4b795ec6))
-    (instances
-      (project "Quest_EMG_V2"
-        (path "/0a1c0da6-b5f4-4811-bab6-325eaaab9ba6"
-          (reference "R2") (unit 1)
-        )
-        (path "/0a1c0da6-b5f4-4811-bab6-325eaaab9ba6/838164a3-69ca-4a23-b38f-f69071e638d3"
-          (reference "R2") (unit 1)
-        )
-      )
-      (project "Quest_EMG"
-        (path "/67748ae8-7ff0-411f-94ce-ac7b136b3c1f"
-          (reference "R2") (unit 1)
-        )
-        (path "/67748ae8-7ff0-411f-94ce-ac7b136b3c1f/8e7c5476-16bd-404a-9f48-60ae4ce6d75c"
-          (reference "R2") (unit 1)
-        )
-      )
-      (project "HARDIMPL"
-        (path "/acefa769-b849-43b8-9ddb-a217494d9f73"
-          (reference "R2") (unit 1)
         )
       )
     )
@@ -3137,7 +3019,7 @@
     (property "Reference" "R1" (at 48.768 108.0516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "390" (at 48.768 110.363 0)
+    (property "Value" "100" (at 48.768 110.363 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 45.212 109.22 90)
@@ -3492,7 +3374,7 @@
     (property "Reference" "R4" (at 48.768 64.8716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "15" (at 48.768 67.183 0)
+    (property "Value" "100" (at 48.768 67.183 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 45.212 66.04 90)
@@ -4364,48 +4246,6 @@
       (project "HARDIMPL"
         (path "/acefa769-b849-43b8-9ddb-a217494d9f73"
           (reference "R10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 46.99 116.84 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d7ac0ee4-27ab-4769-9acb-412e32458069)
-    (property "Reference" "R2" (at 48.768 115.6716 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "15" (at 48.768 117.983 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 45.212 116.84 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 46.99 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e077fd72-53ae-46e6-ae43-07ad0cd6ee8a))
-    (pin "2" (uuid e308dac5-7908-4a88-bb98-10a6032e0768))
-    (instances
-      (project "Quest_EMG_V2"
-        (path "/0a1c0da6-b5f4-4811-bab6-325eaaab9ba6"
-          (reference "R2") (unit 1)
-        )
-        (path "/0a1c0da6-b5f4-4811-bab6-325eaaab9ba6/838164a3-69ca-4a23-b38f-f69071e638d3"
-          (reference "R17") (unit 1)
-        )
-      )
-      (project "Quest_EMG"
-        (path "/67748ae8-7ff0-411f-94ce-ac7b136b3c1f"
-          (reference "R2") (unit 1)
-        )
-        (path "/67748ae8-7ff0-411f-94ce-ac7b136b3c1f/8e7c5476-16bd-404a-9f48-60ae4ce6d75c"
-          (reference "R6") (unit 1)
-        )
-      )
-      (project "HARDIMPL"
-        (path "/acefa769-b849-43b8-9ddb-a217494d9f73"
-          (reference "R2") (unit 1)
         )
       )
     )
